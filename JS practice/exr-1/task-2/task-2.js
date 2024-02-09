@@ -1,11 +1,11 @@
 //Java script код с созданием переменных
 
 
-const myName = 'Денис'
-const mySurname = 'Филатов'
-let myFavoriteDrink = 'Burn'
-let myFavoriteAnimal = 'Собаки'
-let myFavoriteProgrammingLanguage = 'Python'
+const myName = 'Денис';
+const mySurname = 'Филатов';
+let myFavoriteDrink = 'Burn';
+let myFavoriteAnimal = 'Собаки';
+let myFavoriteProgrammingLanguage = 'Python';
 
 console.log(myName)
 console.log(mySurname)
