@@ -1,13 +1,5 @@
-userLogin = prompt("Введите логин")
-userPassword = prompt("Введите пароль")
-
-userLogin = userLogin.trim()
-userPassword = userPassword.trim()
-
-const existedUserLogin = "the_best_user";
-const existedUserPassword = "12345678"
-if (userLogin === existedUserLogin && userPassword === existedUserPassword) {
-    alert(`Добро пожаловать, ${userLogin} !`)
-} else {
-    alert(`Логин и (или) пароль введены неверно!`)
-}
+let userString = prompt('Введите текст для обрезки')
+userString= userString.trim()
+const startSliceIndex =+ prompt('Введите индекс с которого нужно начать обрезку строки')
+const endSliceIndex =+ prompt('Введите индекс, которым нужно закончить обрезку строки')
+alert(`Результат: ${userString.slice(startSliceIndex, endSliceIndex)}`);
