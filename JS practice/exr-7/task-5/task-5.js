@@ -1,20 +1,19 @@
-function getName1(name) {
-    name = prompt("Введите имя");
-    console.log(`Имя = ${name}`);
-    return name;
+let clientsEstimation = []
+let answ = alert(prompt("Как вы оцениваете нашу кофейню от 1 до 10?"))
+answ = Number(answ);
+
+function askClientToGiveEstimation () {
+
+  if (answ >= 1 && answ <= 10) {
+    clientsEstimation.push(answ)
   }
-  getName1();
-  
-  const getName2 = function (name) {
-    name = prompt("Введите имя");
-    console.log(`Имя = ${name}`);
-    return name;
-  };
-  getName2();
-  
-  const getName3 = (name) => {
-    name = prompt("Введите имя");
-    console.log(`Имя = ${name}`);
-    return name;
-  };
-  getName3();
+}
+
+for (let i = 0; i < 5; i++){
+  askClientToGiveEstimation()
+}
+
+let goodEstimations = clientsEstimation.filter(answ > 5)
+let badEstimations = clientsEstimation.filter(answ < 5)
+
+alert(`Всего положительных оценок - ${goodEstimations}, а плохих - ${badEstimations}`)
