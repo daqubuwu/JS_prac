@@ -1,23 +1,39 @@
-const users = [
-    {
-      username: "David",
-      status: "online",
-      lastActivity: 10,
-    },
-    {
-      username: "Lucy",
-      status: "offline",
-      lastActivity: 22,
-    },
-    {
-      username: "Bob",
-      status: "online",
-      lastActivity: 104,
-    },
-  ];
-  
-  const onlineUsers = users.filter(user => user.status === 'online');
-  
-  const usersOnlineNames = onlineUsers.map(user => user.username).join(', ');
-  
-  alert(`Сейчас в онлайн следующие пользователи: ${usersOnlineNames}`);
+const dog = {
+  name: "Феня",
+  type: "Собака",
+  makeSound() {
+    return "Гав!!";
+  },
+  makeDomestic() {
+    console.log(`
+      ${this.type} по имени ${this.name} говорит ${this.makeSound()}
+    `);
+    return {
+      name: this.name,
+      type: this.type,
+      makeSOund: this.makeSound,
+      isDomastic: true,
+    };
+  },
+};
+
+const bird = {
+  name: "Петя",
+  type: "Воробей",
+  makeSOund() {
+    return "Чик-чик-чирик!";
+  },
+  makeDomestic() {
+    console.log(`
+      ${this.type} по имени ${this.name} говорит ${this.makeSOund()}
+    `);
+    return {
+      name: this.name,
+      type: this.type,
+      makeSOund: this.makeSOund,
+      isDomastic: true,
+    };
+  },
+};
+
+dog.makeDomestic();
