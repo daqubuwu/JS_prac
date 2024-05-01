@@ -120,7 +120,7 @@ const tasks = [
   
     input.value = "";
   });
-  
+   
   const modal = document.querySelector(".modal-overlay"),
     modalCloseBtn = modal.querySelector(".cancel-button"),
     taskDeleteBtn = modal.querySelector(".confirm-button");
